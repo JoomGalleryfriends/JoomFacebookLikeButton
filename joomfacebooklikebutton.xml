@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="joomgallery" method="upgrade">
+  <name>PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON</name>
+  <author>- 2015 Chraneco; since 2019 JoomGallery::ProjectTeam</author>
+  <creationDate>2019/05/08</creationDate>
+  <copyright>Copyright (C) 2012 - 2019 Open Source Matters. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorUrl>www.joomgalleryfriends.net</authorUrl>
+  <version>3.0.0</version>
+  <description>PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_XML_DESCRIPTION</description>
+  <files>
+    <filename plugin="joomfacebooklikebutton">joomfacebooklikebutton.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.plg_joomgallery_joomfacebooklikebutton.ini</language>
+    <language tag="en-GB">en-GB/en-GB.plg_joomgallery_joomfacebooklikebutton.sys.ini</language>
+    <language tag="de-DE">de-DE/de-DE.plg_joomgallery_joomfacebooklikebutton.ini</language>
+    <language tag="de-DE">de-DE/de-DE.plg_joomgallery_joomfacebooklikebutton.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="layout" type="list" default="standard" label="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_LAYOUT_LABEL" description="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_LAYOUT_DESC">
+          <option value="standard">standard</option>
+          <option value="button_count">button_count</option>
+          <option value="box_count">box_count</option>
+        </field>
+        <field name="show_faces" type="radio" default="false" label="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_SHOW_FACES_LABEL" description="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_SHOW_FACES_DESC">
+          <option value="false">JNO</option>
+          <option value="true">JYES</option>
+        </field>
+        <field name="width" type="text" default="450" label="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_WIDTH_LABEL" description="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_WIDTH_DESC" />
+        <field name="height" type="text" default="30" label="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_HEIGHT_LABEL" description="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_HEIGHT_DESC" />
+        <field name="action" type="list" default="like" label="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_ACTION_LABEL" description="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_ACTION_DESC">
+          <option value="like">PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_ACTION_LIKE</option>
+          <option value="recommend">PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_ACTION_RECOMMEND</option>
+        </field>
+        <field name="font" type="list" default="" label="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_FONT_LABEL" description="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_FONT_DESC">
+          <option value="">PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_FONT_NOT_SET</option>
+          <option value="arial">arial</option>
+          <option value="lucida grande">lucida grande</option>
+          <option value="segoe ui">segoe ui</option>
+          <option value="tahoma">tahoma</option>
+          <option value="trebuchet ms">trebuchet ms</option>
+          <option value="verdana">verdana</option>
+        </field>
+        <field name="colorscheme" type="list" default="light" label="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_COLORSCHEME_LABEL" description="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_COLORSCHEME_DESC">
+          <option value="light">PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_COLORSCHEME_LIGHT</option>
+          <option value="dark">PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_COLORSCHEME_DARK</option>
+        </field>
+        <field name="admins" type="text" default="" label="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_ADMINS_LABEL" description="PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_FIELD_ADMINS_DESC" required="true" />
+      </fieldset>
+    </fields>
+  </config>
+  <updateservers>
+    <server type="collection" priority="1" name="JoomGallery Update Service">https://www.joomgallery.net/components/com_newversion/xml/extensions3.xml</server>
+  </updateservers>
+</extension>
