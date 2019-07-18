@@ -2,11 +2,11 @@
 <extension version="3.0" type="plugin" group="joomgallery" method="upgrade">
   <name>PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON</name>
   <author>- 2015 Chraneco; since 2019 JoomGallery::ProjectTeam</author>
-  <creationDate>2019/05/08</creationDate>
+  <creationDate>2019/07/18</creationDate>
   <copyright>Copyright (C) 2012 - 2019 Open Source Matters. All rights reserved.</copyright>
   <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
   <authorUrl>www.joomgalleryfriends.net</authorUrl>
-  <version>3.0.0</version>
+  <version>3.0.1</version>
   <description>PLG_JOOMGALLERY_JOOMFACEBOOKLIKEBUTTON_XML_DESCRIPTION</description>
   <files>
     <filename plugin="joomfacebooklikebutton">joomfacebooklikebutton.php</filename>
